@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<style>
+    #btn{
+        height: 50px;
+        width: 90px;
+        border: 2px solid red;
+        background-color: lightgreen;
+        color: red;
+        padding: 10px;
+        border-radius: 10px;
+        font-size:14px;
+        font-weight: bold;
+    }
+
+</style>
+<body>
+
+    <h1>This is my Paragraph</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia architecto mollitia aspernatur nesciunt? Quo excepturi soluta ipsum veniam mollitia rerum, cum dicta natus incidunt voluptatum placeat asperiores! Neque praesentium labore nostrum corporis? Ut nobis vitae, accusamus quod quam ipsa quis sed delectus enim officia. Perspiciatis, at cum ipsa dignissimos quibusdam aliquid reprehenderit quos quo, deserunt, nemo eaque. Incidunt, odit nisi eveniet iste corrupti ratione harum dolores necessitatibus alias sint! Et culpa quae hic. Placeat id quis soluta assumenda repellat ad fugit, porro cum incidunt magnam. Exercitationem repudiandae minus nulla blanditiis tempora libero quidem vitae cum ipsam minima iure consequuntur eum vero est voluptatum deleniti, fugiat quasi? Cum atque, doloremque tempore pariatur earum vel dicta quasi reprehenderit corporis nam nobis voluptate, facilis eveniet quidem quis quibusdam et accusamus, incidunt quo libero officia suscipit sequi dolor modi! Iure fuga ipsum reprehenderit quasi facilis reiciendis ullam odit est, error illo velit placeat rerum laboriosam commodi eum earum maxime tenetur voluptas assumenda molestiae atque recusandae nulla corrupti! Mollitia aperiam, autem explicabo itaque delectus quaerat dolores architecto, fuga rerum dolorum ratione cum eveniet vero nam quo commodi incidunt alias ab illum labore reiciendis! Fugit voluptates illum omnis atque perspiciatis accusamus, totam veniam consectetur delectus quia est ut amet blanditiis dignissimos fugiat asperiores quos ratione modi, architecto error minus in? Repudiandae aperiam dolor nobis? Aut sed reprehenderit itaque ex iusto deserunt unde maxime nisi maiores eum dolor earum, eligendi suscipit voluptatem aperiam, asperiores placeat quas libero laboriosam! Reiciendis nobis rerum voluptatem cupiditate neque? Mollitia, sequi.</p>
+
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+  
+
+    
+    <script>
+     function togglehide()
+     {
+
+         let btn=document.getElementById('btn');
+         let para=document.getElementById('para');
+         if(para.style.display!='none')
+         {
+             para.style.display='none';
+         }
+         else{
+             para.style.display='block';
+         }
+     }
+    </script>
+    
+</body>
+</html>
