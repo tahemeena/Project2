@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .logo img{
+        height: 30%;
+        width: 10%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+        height: 70px;
+        background-color: lightpink;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .menu li {
+        list-style: none;
+    }
+    .menu li a{
+        display: flex;
+        margin: 40px;
+        padding: 10px;
+        justify-content: center;
+        width: 60%;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+    .menu li a:hover{
+        color: brown;
+    }
+    .burger div{
+        width: 30px;
+        height: 10px;
+        background-color: black;
+        margin: 10px;
+        
+    }
+
+    .home img{
+
+        height:100%;
+        width: 100%;
+        opacity: 0.70;
+    }
+    .home  p{
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        z-index: 0.89;
+       
+
+        width: 50%;
+        border: 2px solid red;
+        padding: 30px;
+        margin: 120px 120px;
+       
+        
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        color:black;    
+      
+        
+        
+    }
+    
+</style>
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="logo">
+                <img src="./images/vegas.jpg" alt="">
+            </div>
+            <div class="main">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </nav>
+        <div class="home">
+            <img src="./images/vegaspic.jpg" alt="">
+           <div>
+
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime eveniet expedita adipisci sit magni animi quos eaque amet consequatur itaque, facilis rem saepe voluptate? Est blanditiis nesciunt tempora temporibus.
+                   
+            
+                   
+                   
+                   
+                   
+            </p>
+        </div>
+        </div>
+    </header>
+    
+</body>
+</html>
